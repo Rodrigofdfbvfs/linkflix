@@ -1,6 +1,7 @@
 import Image from "next/image";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Gift, CreditCard, Image as ImageIcon, Globe, Briefcase, Smile } from "lucide-react";
+import { PlaceHolderImages } from "@/lib/placeholder-images";
 
 const bonuses = [
   {
@@ -56,9 +57,21 @@ export default function BonusSection() {
         </div>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
           {bonuses.map((bonus, index) => {
+            const image = PlaceHolderImages.find((img) => img.id === bonus.imageId);
             return (
               <div key={index} className="animate-in fade-in slide-in-from-bottom-10 duration-700" style={{ animationDelay: `${index * 100}ms` }}>
                 <Card className="bg-gray-900/50 border-gray-800 text-white rounded-lg overflow-hidden h-full flex flex-col group transition-all duration-300 hover:transform hover:-translate-y-2 hover:shadow-red-glow">
+                  {image && (
+                    <div className="relative w-full aspect-video">
+                      <Image
+                        src={image.imageUrl}
+                        alt={image.description}
+                        fill
+                        className="object-cover group-hover:scale-105 transition-transform duration-300"
+                        data-ai-hint={image.imageHint}
+                      />
+                    </div>
+                  )}
                   <CardHeader>
                     <CardTitle className="text-primary text-2xl mt-4 !font-bold">Bônus #{bonus.id} &ndash; {bonus.title}</CardTitle>
                   </CardHeader>
