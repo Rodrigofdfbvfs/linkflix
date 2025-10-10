@@ -33,10 +33,6 @@ export default function SpecialOfferPage() {
                     <div className="flex justify-center">
                         <div className="w-full max-w-md animate-in fade-in slide-in-from-bottom-10 duration-700">
                             <Card className="bg-primary/10 border-primary h-full flex flex-col ring-2 ring-primary shadow-red-glow relative overflow-hidden">
-                                <div className="absolute top-0 right-0 bg-yellow-400 text-black font-bold px-4 py-1 transform rotate-45 translate-x-8 translate-y-8">
-                                    <Star className="inline-block h-4 w-4 mr-1" />
-                                    <span>OFERTA</span>
-                                </div>
                                 <CardHeader className="text-center">
                                     <CardTitle className="text-3xl font-headline tracking-wider text-primary">Plano Premium</CardTitle>
                                     <CardDescription className="text-white/70">Acesso completo e todos os bônus</CardDescription>
