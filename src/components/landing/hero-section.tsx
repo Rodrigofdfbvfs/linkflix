@@ -41,6 +41,10 @@ export default function HeroSection() {
           >
             <a href="#">Quero o meu agora</a>
           </Button>
+          <p className="mt-4 text-white/80">
+            Por apenas <br />
+            <span className="font-bold text-xl text-white">R$ 14,90</span>
+          </p>
         </div>
       </div>
     </section>
