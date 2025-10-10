@@ -35,8 +35,11 @@ export default function PricingSection() {
         </div>
         <div className="flex flex-wrap justify-center gap-8">
           {/* Plano Premium */}
-          <div className="w-full max-w-md animate-in fade-in slide-in-from-bottom-10 duration-700 delay-200">
-            <Card className="bg-primary/10 border-primary h-full flex flex-col ring-2 ring-primary shadow-red-glow">
+          <div className="w-full max-w-md animate-in fade-in slide-in-from-bottom-10 duration-700 delay-200 relative">
+            <div className="absolute top-0 right-0 -mt-3 mr-3 z-10 bg-primary text-primary-foreground text-xs font-bold uppercase tracking-wider px-3 py-1.5 rounded-full shadow-lg">
+              Mais Popular
+            </div>
+            <Card className="bg-primary/10 border-primary h-full flex flex-col ring-2 ring-primary shadow-red-glow pt-4">
               <CardHeader className="text-center">
                 <CardTitle className="text-3xl font-headline tracking-wider text-primary">Plano Premium</CardTitle>
                 <CardDescription className="text-white/70">Acesso completo e todos os bônus</CardDescription>
