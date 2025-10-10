@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
 import { Check } from "lucide-react";
+import Link from "next/link";
 
 const basicFeatures = [
   "Acesso ao template principal estilo Netflix",
@@ -76,7 +77,7 @@ export default function PricingSection() {
               </CardContent>
               <CardFooter>
                 <Button asChild className="w-full bg-gray-700 hover:bg-gray-600">
-                  <a href="#">Começar com o plano básico &ndash; R$ 14,90</a>
+                  <Link href="/oferta-especial">Começar com o plano básico &ndash; R$ 14,90</Link>
                 </Button>
               </CardFooter>
             </Card>
