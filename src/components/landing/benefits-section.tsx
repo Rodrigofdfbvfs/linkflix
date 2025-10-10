@@ -3,32 +3,32 @@ import { Sparkles, Palette, Users, Zap, TrendingUp, ShoppingBag } from "lucide-r
 
 const benefits = [
   {
-    icon: <Palette size={32} className="text-primary" />,
+    icon: <Palette size={32} className="text-[#111111]" />,
     title: "Design profissional inspirado na Netflix",
     description: "Cause uma primeira impressão impactante com um visual que seus seguidores já amam e confiam.",
   },
   {
-    icon: <Sparkles size={32} className="text-primary" />,
+    icon: <Sparkles size={32} className="text-[#111111]" />,
     title: "100% editável no Canva (sem precisar saber design)",
     description: "Personalize cores, fontes e imagens facilmente, sem precisar de habilidades técnicas.",
   },
   {
-    icon: <Users size={32} className="text-primary" />,
+    icon: <Users size={32} className="text-[#111111]" />,
     title: "Compatível com qualquer nicho",
     description: "Seja você um criador, coach ou empresário, o template se adapta perfeitamente à sua marca.",
   },
   {
-    icon: <Zap size={32} className="text-primary" />,
+    icon: <Zap size={32} className="text-[#111111]" />,
     title: "Carrega rápido e é totalmente responsivo",
     description: "Ofereça a melhor experiência em qualquer dispositivo, do celular ao desktop, sem lentidão.",
   },
   {
-    icon: <TrendingUp size={32} className="text-primary" />,
+    icon: <TrendingUp size={32} className="text-[#111111]" />,
     title: "Aumenta engajamento e conversão",
     description: "Um link da bio profissional e organizado incentiva cliques e transforma seguidores em clientes.",
   },
   {
-    icon: <ShoppingBag size={32} className="text-primary" />,
+    icon: <ShoppingBag size={32} className="text-[#111111]" />,
     title: "Ideal para vender produtos e serviços",
     description: "Mostre seu portfólio, e-books, cursos e serviços de forma irresistível e profissional.",
   },
