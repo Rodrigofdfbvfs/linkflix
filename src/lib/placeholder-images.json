@@ -1,3 +1,34 @@
 {
-  "placeholderImages": []
+  "placeholderImages": [
+    {
+      "id": "hero-image",
+      "description": "Collage of Netflix-style bio link examples",
+      "imageUrl": "https://imgur.com/o8c28ix.png",
+      "imageHint": "bio link examples"
+    },
+    {
+      "id": "phone-mockup",
+      "description": "A phone showing the BioFlix template in action",
+      "imageUrl": "https://picsum.photos/seed/bioflix-phone/400/800",
+      "imageHint": "phone mockup"
+    },
+    {
+      "id": "testimonial-avatar-1",
+      "description": "Avatar for the first testimonial",
+      "imageUrl": "https://picsum.photos/seed/avatar1/100/100",
+      "imageHint": "person portrait"
+    },
+    {
+      "id": "testimonial-avatar-2",
+      "description": "Avatar for the second testimonial",
+      "imageUrl": "https://picsum.photos/seed/avatar2/100/100",
+      "imageHint": "person portrait"
+    },
+    {
+      "id": "testimonial-avatar-3",
+      "description": "Avatar for the third testimonial",
+      "imageUrl": "https://picsum.photos/seed/avatar3/100/100",
+      "imageHint": "person portrait"
+    }
+  ]
 }
