@@ -47,7 +47,7 @@ export default function BenefitsSection() {
               <Card className="h-full bg-transparent border-2 border-primary rounded-lg transition-all duration-300 hover:shadow-red-glow text-center">
                 <CardHeader>
                   <div className="flex justify-center mb-4">{benefit.icon}</div>
-                  <CardTitle className="text-xl font-bold">{benefit.title}</CardTitle>
+                  <CardTitle className="text-xl font-bold text-[#111111]">{benefit.title}</CardTitle>
                 </CardHeader>
                 <CardContent>
                   <p className="text-base text-[#111111]/80">{benefit.description}</p>
