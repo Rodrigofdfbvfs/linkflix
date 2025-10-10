@@ -61,7 +61,7 @@ export default function SpecialOfferPage() {
                                     <Button asChild size="lg" className="w-full font-bold transition-all duration-300 hover:shadow-red-glow">
                                         <a href="#">Quero o Premium com Desconto!</a>
                                     </Button>
-                                    <Button asChild variant="ghost" className="w-full text-white/70 hover:text-white">
+                                    <Button asChild variant="outline" className="w-full text-white/70 hover:text-white hover:bg-primary/10 border-primary">
                                         <Link href="#">Não, obrigado. Quero apenas o plano básico.</Link>
                                     </Button>
                                 </CardFooter>
