@@ -11,14 +11,17 @@ const basicFeatures = [
 ];
 
 const premiumFeatures = [
-  "Tudo do plano Básico",
-  "Canva Pro Grátis",
-  "Modelos de Checkout",
-  "Posts prontos no Canva",
-  "Templates de Sites",
-  "Templates para Prestadores de Serviço",
-  "Pack de Figurinhas para Stories",
-  "Atualizações semanais",
+    "Acesso ao template principal estilo Netflix",
+    "Acesso vitalício",
+    "Garantia de 7 dias",
+    "Suporte incluso",
+    "Canva Pro Grátis",
+    "Modelos de Checkout",
+    "Posts prontos no Canva",
+    "Templates de Sites",
+    "Templates para Prestadores de Serviço",
+    "Pack de Figurinhas para Stories",
+    "Atualizações semanais",
 ];
 
 export default function PricingSection() {

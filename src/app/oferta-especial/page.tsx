@@ -6,7 +6,10 @@ import Footer from "@/components/landing/footer";
 import Link from "next/link";
 
 const premiumFeatures = [
-    "Tudo do plano Básico",
+    "Acesso ao template principal estilo Netflix",
+    "Acesso vitalício",
+    "Garantia de 7 dias",
+    "Suporte incluso",
     "Canva Pro Grátis",
     "Modelos de Checkout",
     "Posts prontos no Canva",
