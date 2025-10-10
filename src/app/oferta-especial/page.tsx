@@ -42,7 +42,9 @@ export default function SpecialOfferPage() {
                                     <CardDescription className="text-white/70">Acesso completo e todos os bônus</CardDescription>
                                     <div className="pt-4">
                                         <p className="text-xl line-through text-white/50">De R$ 27,00</p>
-                                        <p className="text-4xl font-bold text-white">Por apenas R$ 20,00</p>
+                                        <p className="text-4xl font-bold text-white">
+                                            Por apenas <br /> R$ 20,00
+                                        </p>
                                     </div>
                                 </CardHeader>
                                 <CardContent className="flex-grow">
