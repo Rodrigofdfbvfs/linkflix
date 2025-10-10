@@ -3,7 +3,7 @@
     {
       "id": "hero-image",
       "description": "Collage of Netflix-style bio link examples",
-      "imageUrl": "https://imgur.com/NaunmJN",
+      "imageUrl": "https://i.imgur.com/NaunmJN.jpeg",
       "imageHint": "bio link examples"
     },
     {
@@ -33,13 +33,13 @@
     {
       "id": "bonus-canva-pro",
       "description": "Image for Canva Pro bonus",
-      "imageUrl": "https://imgur.com/fR3MIVE",
+      "imageUrl": "https://i.imgur.com/fR3MIVE.png",
       "imageHint": "graphic design"
     },
     {
       "id": "bonus-checkout",
       "description": "Image for checkout templates bonus",
-      "imageUrl": "https://imgur.com/JNbgBCR",
+      "imageUrl": "https://i.imgur.com/JNbgBCR.png",
       "imageHint": "checkout models"
     },
     {
