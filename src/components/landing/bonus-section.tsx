@@ -75,7 +75,6 @@ export default function BonusSection() {
                     </div>
                   )}
                   <CardHeader>
-                    {bonus.icon}
                     <CardTitle className="text-primary text-2xl mt-4 !font-bold">Bônus #{bonus.id} &ndash; {bonus.title}</CardTitle>
                   </CardHeader>
                   <CardContent className="flex-grow flex flex-col justify-between">
