@@ -54,7 +54,7 @@ export default function PricingSection() {
               </CardContent>
               <CardFooter>
                 <Button asChild size="lg" className="w-full font-bold transition-all duration-300 hover:shadow-red-glow">
-                  <a href="#">Quero o Premium completo &ndash; R$ 27,00</a>
+                  <a href="#">Quero o Premium completo</a>
                 </Button>
               </CardFooter>
             </Card>
@@ -80,7 +80,7 @@ export default function PricingSection() {
               </CardContent>
               <CardFooter>
                 <Button asChild className="w-full bg-gray-700 hover:bg-gray-600">
-                  <Link href="/oferta-especial">Começar com o plano básico &ndash; R$ 14,90</Link>
+                  <Link href="/oferta-especial">Começar com o plano básico</Link>
                 </Button>
               </CardFooter>
             </Card>

@@ -59,7 +59,7 @@ export default function SpecialOfferPage() {
                                 </CardContent>
                                 <CardFooter className="flex-col gap-4">
                                     <Button asChild size="lg" className="w-full font-bold transition-all duration-300 hover:shadow-red-glow">
-                                        <a href="#">Quero o Premium com Desconto! &ndash; R$ 20,00</a>
+                                        <a href="#">Quero o Premium com Desconto!</a>
                                     </Button>
                                     <Button asChild variant="ghost" className="w-full text-white/70 hover:text-white">
                                         <Link href="#">Não, obrigado. Quero apenas o plano básico.</Link>
