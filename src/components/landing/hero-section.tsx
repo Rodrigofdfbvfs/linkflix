@@ -21,7 +21,7 @@ export default function HeroSection() {
               alt={heroImage.description}
               width={1000}
               height={500}
-              className="w-full max-w-xl h-auto object-contain"
+              className="w-full max-w-3xl h-auto object-contain"
               data-ai-hint={heroImage.imageHint}
               priority
             />
