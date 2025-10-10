@@ -29,6 +29,42 @@
       "description": "Avatar for the third testimonial",
       "imageUrl": "https://picsum.photos/seed/avatar3/100/100",
       "imageHint": "person portrait"
+    },
+    {
+      "id": "bonus-canva-pro",
+      "description": "Image for Canva Pro bonus",
+      "imageUrl": "https://picsum.photos/seed/bonus1/400/225",
+      "imageHint": "graphic design"
+    },
+    {
+      "id": "bonus-checkout",
+      "description": "Image for checkout templates bonus",
+      "imageUrl": "https://picsum.photos/seed/bonus2/400/225",
+      "imageHint": "online shopping"
+    },
+    {
+      "id": "bonus-canva-posts",
+      "description": "Image for Canva posts bonus",
+      "imageUrl": "https://picsum.photos/seed/bonus3/400/225",
+      "imageHint": "social media"
+    },
+    {
+      "id": "bonus-sites",
+      "description": "Image for site templates bonus",
+      "imageUrl": "https://picsum.photos/seed/bonus4/400/225",
+      "imageHint": "website design"
+    },
+    {
+      "id": "bonus-services",
+      "description": "Image for service providers templates bonus",
+      "imageUrl": "https://picsum.photos/seed/bonus5/400/225",
+      "imageHint": "professional services"
+    },
+    {
+      "id": "bonus-stickers",
+      "description": "Image for stories stickers bonus",
+      "imageUrl": "https://picsum.photos/seed/bonus6/400/225",
+      "imageHint": "cute stickers"
     }
   ]
 }
