@@ -65,6 +65,36 @@
       "description": "Image for stories stickers bonus",
       "imageUrl": "https://picsum.photos/seed/bonus6/400/225",
       "imageHint": "cute stickers"
+    },
+    {
+      "id": "how-it-works-1",
+      "description": "Carousel image 1 for how it works section",
+      "imageUrl": "https://i.imgur.com/LOz2gFC.png",
+      "imageHint": "app interface"
+    },
+    {
+      "id": "how-it-works-2",
+      "description": "Carousel image 2 for how it works section",
+      "imageUrl": "https://i.imgur.com/y4Pqn9J.png",
+      "imageHint": "app interface"
+    },
+    {
+      "id": "how-it-works-3",
+      "description": "Carousel image 3 for how it works section",
+      "imageUrl": "https://i.imgur.com/0LcjpQO.png",
+      "imageHint": "app interface"
+    },
+    {
+      "id": "how-it-works-4",
+      "description": "Carousel image 4 for how it works section",
+      "imageUrl": "https://i.imgur.com/BeGD7S8.png",
+      "imageHint": "app interface"
+    },
+    {
+      "id": "how-it-works-5",
+      "description": "Carousel image 5 for how it works section",
+      "imageUrl": "https://i.imgur.com/8p027ju.png",
+      "imageHint": "app interface"
     }
   ]
 }
