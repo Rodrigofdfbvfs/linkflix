@@ -1,8 +1,9 @@
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
-import { Check, Star } from "lucide-react";
+import { Check } from "lucide-react";
 import Header from "@/components/landing/header";
 import Footer from "@/components/landing/footer";
+import Link from "next/link";
 
 const premiumFeatures = [
     "Tudo do plano Básico",
@@ -53,9 +54,12 @@ export default function SpecialOfferPage() {
                                         ))}
                                     </ul>
                                 </CardContent>
-                                <CardFooter>
+                                <CardFooter className="flex-col gap-4">
                                     <Button asChild size="lg" className="w-full font-bold transition-all duration-300 hover:shadow-red-glow">
                                         <a href="#">Quero o Premium com Desconto! &ndash; R$ 20,00</a>
+                                    </Button>
+                                    <Button asChild variant="ghost" className="w-full text-white/70 hover:text-white">
+                                        <Link href="#">Não, obrigado. Quero apenas o plano básico.</Link>
                                     </Button>
                                 </CardFooter>
                             </Card>
