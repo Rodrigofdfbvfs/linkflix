@@ -97,9 +97,27 @@
       "imageHint": "app interface"
     },
     {
-      "id": "testimonials-carousel",
-      "description": "Carousel image for testimonials",
+      "id": "testimonials-carousel-1",
+      "description": "Carousel image 1 for testimonials",
       "imageUrl": "https://imgur.com/uWqe3Kj.png",
+      "imageHint": "customer feedback"
+    },
+    {
+      "id": "testimonials-carousel-2",
+      "description": "Carousel image 2 for testimonials",
+      "imageUrl": "https://imgur.com/FPHHflg.png",
+      "imageHint": "customer feedback"
+    },
+    {
+      "id": "testimonials-carousel-3",
+      "description": "Carousel image 3 for testimonials",
+      "imageUrl": "https://imgur.com/MXhcKRh.png",
+      "imageHint": "customer feedback"
+    },
+    {
+      "id": "testimonials-carousel-4",
+      "description": "Carousel image 4 for testimonials",
+      "imageUrl": "https://imgur.com/q4mrwKP.png",
       "imageHint": "customer feedback"
     }
   ]
