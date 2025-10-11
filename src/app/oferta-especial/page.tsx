@@ -4,6 +4,8 @@ import { Check } from "lucide-react";
 import Header from "@/components/landing/header";
 import Footer from "@/components/landing/footer";
 import Link from "next/link";
+import Image from "next/image";
+import { PlaceHolderImages } from "@/lib/placeholder-images";
 
 const premiumFeatures = [
     "Acesso ao template principal estilo Netflix",
@@ -20,6 +22,7 @@ const premiumFeatures = [
 ];
 
 export default function SpecialOfferPage() {
+    const premiumImage = PlaceHolderImages.find((img) => img.id === 'hero-image');
     return (
         <div className="flex min-h-screen flex-col bg-black text-white">
             <Header />
@@ -36,7 +39,19 @@ export default function SpecialOfferPage() {
 
                     <div className="flex justify-center">
                         <div className="w-full max-w-md animate-in fade-in slide-in-from-bottom-10 duration-700">
-                            <Card className="bg-primary/10 border-primary h-full flex flex-col ring-2 ring-primary shadow-red-glow relative overflow-hidden">
+                            <Card className="bg-primary/10 border-primary h-full flex flex-col ring-2 ring-primary shadow-red-glow relative overflow-hidden pt-4">
+                                {premiumImage && (
+                                    <div className="px-6">
+                                    <Image
+                                        src={premiumImage.imageUrl}
+                                        alt={premiumImage.description}
+                                        width={400}
+                                        height={200}
+                                        className="rounded-md object-cover"
+                                        data-ai-hint={premiumImage.imageHint}
+                                    />
+                                    </div>
+                                )}
                                 <CardHeader className="text-center">
                                     <CardTitle className="text-3xl font-headline tracking-wider text-primary">Plano Premium</CardTitle>
                                     <CardDescription className="text-white/70">Acesso completo e todos os bônus</CardDescription>
