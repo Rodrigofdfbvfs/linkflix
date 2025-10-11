@@ -2,6 +2,8 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
 import { Check } from "lucide-react";
 import Link from "next/link";
+import Image from "next/image";
+import { PlaceHolderImages } from "@/lib/placeholder-images";
 
 const basicFeatures = [
   "Acesso ao template principal estilo Netflix",
@@ -25,6 +27,7 @@ const premiumFeatures = [
 ];
 
 export default function PricingSection() {
+  const premiumImage = PlaceHolderImages.find((img) => img.id === 'hero-image');
   return (
     <section className="py-20 sm:py-28 bg-black text-white">
       <div className="container mx-auto px-4">
@@ -39,7 +42,19 @@ export default function PricingSection() {
             <div className="absolute top-0 left-1/2 -translate-x-1/2 -mt-3 z-10 bg-primary text-primary-foreground text-xs font-bold uppercase tracking-wider px-3 py-1.5 rounded-full shadow-lg">
               Mais Popular
             </div>
-            <Card className="bg-primary/10 border-primary h-full flex flex-col ring-2 ring-primary shadow-red-glow pt-4">
+            <Card className="bg-primary/10 border-primary h-full flex flex-col ring-2 ring-primary shadow-red-glow pt-4 overflow-hidden">
+              {premiumImage && (
+                <div className="px-6">
+                  <Image
+                    src={premiumImage.imageUrl}
+                    alt={premiumImage.description}
+                    width={400}
+                    height={200}
+                    className="rounded-md object-cover"
+                    data-ai-hint={premiumImage.imageHint}
+                  />
+                </div>
+              )}
               <CardHeader className="text-center">
                 <CardTitle className="text-3xl font-headline tracking-wider text-primary">Plano Premium</CardTitle>
                 <CardDescription className="text-white/70">Acesso completo e todos os bônus</CardDescription>
