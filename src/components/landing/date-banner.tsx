@@ -20,18 +20,15 @@ export default function DateBanner() {
     return (
         <div
             style={{
-                color: '#fff',
+                color: '#ffffff',
                 fontWeight: 'bold',
                 fontFamily: 'Arial',
-                backgroundColor: '#201119',
+                backgroundColor: '#E50914',
                 padding: '4px',
                 textAlign: 'center',
             }}
         >
-            <span style={{ color: '#FFFF00' }}>Desconto só </span>
-            <span style={{ color: '#FFFF00' }}>HOJE </span>
-            <span style={{ color: '#FFF' }}>nessa página </span>
-            <span style={{ color: '#FFFF00' }}>{date}</span>
+            Desconto só HOJE nessa página {date}
         </div>
     );
 }
