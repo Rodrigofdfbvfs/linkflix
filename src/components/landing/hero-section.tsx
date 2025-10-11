@@ -6,7 +6,7 @@ export default function HeroSection() {
   const heroImage = PlaceHolderImages.find((img) => img.id === 'hero-image');
 
   return (
-    <section className="relative w-full min-h-screen flex items-center justify-center text-center overflow-hidden bg-black py-20">
+    <section className="relative w-full flex items-center justify-center text-center overflow-hidden bg-black py-10 sm:py-20">
       <div
         className="absolute inset-0 bg-black opacity-50"
         style={{
@@ -15,7 +15,7 @@ export default function HeroSection() {
       ></div>
       <div className="container relative z-10 flex flex-col items-center px-4">
         {heroImage && (
-          <div className="mb-5 md:mb-8 animate-in fade-in zoom-in-50 duration-1000">
+          <div className="mb-8 animate-in fade-in zoom-in-50 duration-1000">
             <Image
               src={heroImage.imageUrl}
               alt={heroImage.description}

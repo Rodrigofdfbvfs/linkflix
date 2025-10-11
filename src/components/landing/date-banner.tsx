@@ -24,7 +24,7 @@ export default function DateBanner() {
                 fontWeight: 'bold',
                 fontFamily: 'Arial',
                 backgroundColor: '#E50914',
-                padding: '4px',
+                padding: '12px 4px',
                 textAlign: 'center',
             }}
         >
