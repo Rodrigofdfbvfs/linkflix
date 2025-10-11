@@ -78,7 +78,7 @@ export default function BonusSection() {
                   <CardContent className="flex-grow flex flex-col justify-between">
                     <p className="text-white/80 mb-4">{bonus.description}</p>
                     <div>
-                      <p className="text-sm text-primary line-through">De: R$127,00</p>
+                      <p className="text-sm text-primary line-through">De: R$60,00</p>
                       <p className="text-lg">Por: <span className="text-[#00FF00] font-bold">GRÁTIS</span></p>
                     </div>
                   </CardContent>
