@@ -1,9 +1,12 @@
+"use client";
+
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
 import { Check } from "lucide-react";
 import Link from "next/link";
 import Image from "next/image";
 import { PlaceHolderImages } from "@/lib/placeholder-images";
+import { useEffect, useState } from "react";
 
 const basicFeatures = [
   "Acesso ao template principal estilo Netflix",
@@ -28,6 +31,18 @@ const premiumFeatures = [
 
 export default function PricingSection() {
   const premiumImage = PlaceHolderImages.find((img) => img.id === 'hero-image');
+
+  const handleRedirect = (baseUrl: string) => {
+    const params = window.location.search;
+    window.location.href = `${baseUrl}${params}`;
+  };
+
+  const [specialOfferUrl, setSpecialOfferUrl] = useState('/oferta-especial');
+
+  useEffect(() => {
+    setSpecialOfferUrl(`/oferta-especial${window.location.search}`);
+  }, []);
+
   return (
     <section className="py-20 sm:py-28 bg-black text-white">
       <div className="container mx-auto px-4">
@@ -71,8 +86,8 @@ export default function PricingSection() {
                 </ul>
               </CardContent>
               <CardFooter>
-                <Button asChild size="lg" className="w-full font-bold transition-all duration-300 hover:shadow-red-glow">
-                  <a href="https://pay.cakto.com.br/39w9cm2_599573">Quero o Premium completo</a>
+                <Button size="lg" className="w-full font-bold transition-all duration-300 hover:shadow-red-glow" onClick={() => handleRedirect('https://pay.cakto.com.br/39w9cm2_599573')}>
+                  Quero o Premium completo
                 </Button>
               </CardFooter>
             </Card>
@@ -98,7 +113,7 @@ export default function PricingSection() {
               </CardContent>
               <CardFooter>
                 <Button asChild className="w-full bg-gray-700 hover:bg-gray-600">
-                  <Link href="/oferta-especial">Começar com o plano básico</Link>
+                  <Link href={specialOfferUrl}>Começar com o plano básico</Link>
                 </Button>
               </CardFooter>
             </Card>

@@ -1,3 +1,5 @@
+"use client";
+
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
 import { Check } from "lucide-react";
@@ -23,6 +25,12 @@ const premiumFeatures = [
 
 export default function SpecialOfferPage() {
     const premiumImage = PlaceHolderImages.find((img) => img.id === 'hero-image');
+
+    const handleRedirect = (baseUrl: string) => {
+        const params = window.location.search;
+        window.location.href = `${baseUrl}${params}`;
+    };
+    
     return (
         <div className="flex min-h-screen flex-col bg-black text-white">
             <Header />
@@ -73,11 +81,11 @@ export default function SpecialOfferPage() {
                                     </ul>
                                 </CardContent>
                                 <CardFooter className="flex-col gap-4">
-                                    <Button asChild size="lg" className="w-full font-bold transition-all duration-300 hover:shadow-red-glow">
-                                        <a href="https://pay.cakto.com.br/9f5q4yt_599573">Quero o Premium com Desconto!</a>
+                                    <Button size="lg" className="w-full font-bold transition-all duration-300 hover:shadow-red-glow" onClick={() => handleRedirect('https://pay.cakto.com.br/9f5q4yt_599573')}>
+                                        Quero o Premium com Desconto!
                                     </Button>
-                                    <Button asChild variant="outline" className="w-full text-white/70 hover:text-white hover:bg-primary/10 border-primary">
-                                        <Link href="https://pay.cakto.com.br/5mw5agw_603744">Não, obrigado. Quero apenas o plano básico.</Link>
+                                    <Button variant="outline" className="w-full text-white/70 hover:text-white hover:bg-primary/10 border-primary" onClick={() => handleRedirect('https://pay.cakto.com.br/5mw5agw_603744')}>
+                                        Não, obrigado. Quero apenas o plano básico.
                                     </Button>
                                 </CardFooter>
                             </Card>

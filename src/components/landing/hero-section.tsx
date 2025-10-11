@@ -1,9 +1,24 @@
+"use client";
+
 import Image from 'next/image';
 import { Button } from '@/components/ui/button';
 import { PlaceHolderImages } from '@/lib/placeholder-images';
+import { useEffect, useState } from 'react';
 
 export default function HeroSection() {
   const heroImage = PlaceHolderImages.find((img) => img.id === 'hero-image');
+  const [checkoutUrl, setCheckoutUrl] = useState('/oferta-especial');
+
+  useEffect(() => {
+    // This code runs only on the client
+    const baseUrl = '/oferta-especial';
+    const params = window.location.search;
+    setCheckoutUrl(`${baseUrl}${params}`);
+  }, []);
+
+  const handleRedirect = () => {
+    window.location.href = checkoutUrl;
+  };
 
   return (
     <section className="relative w-full flex items-center justify-center text-center overflow-hidden bg-black py-10 sm:py-20">
@@ -37,9 +52,9 @@ export default function HeroSection() {
           <Button
             size="lg"
             className="font-bold text-lg px-8 py-6 bg-primary text-primary-foreground rounded-md transition-all duration-300 hover:bg-primary/90 hover:shadow-red-glow"
-            asChild
+            onClick={handleRedirect}
           >
-            <a href="#">Quero o meu agora</a>
+            Quero o meu agora
           </Button>
           <p className="mt-4 text-white/80">
             Por apenas <br />
