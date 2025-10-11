@@ -72,7 +72,7 @@ export default function PricingSection() {
               </CardContent>
               <CardFooter>
                 <Button asChild size="lg" className="w-full font-bold transition-all duration-300 hover:shadow-red-glow">
-                  <a href="#">Quero o Premium completo</a>
+                  <a href="https://pay.cakto.com.br/39w9cm2_599573">Quero o Premium completo</a>
                 </Button>
               </CardFooter>
             </Card>
