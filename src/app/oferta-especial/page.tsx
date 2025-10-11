@@ -77,7 +77,7 @@ export default function SpecialOfferPage() {
                                         <a href="#">Quero o Premium com Desconto!</a>
                                     </Button>
                                     <Button asChild variant="outline" className="w-full text-white/70 hover:text-white hover:bg-primary/10 border-primary">
-                                        <Link href="#">Não, obrigado. Quero apenas o plano básico.</Link>
+                                        <Link href="https://pay.cakto.com.br/5mw5agw_603744">Não, obrigado. Quero apenas o plano básico.</Link>
                                     </Button>
                                 </CardFooter>
                             </Card>
