@@ -41,6 +41,8 @@ export default function TestimonialsSection() {
   const avatar3 = PlaceHolderImages.find((img) => img.id === 'testimonial-avatar-3');
   const avatars = [avatar1, avatar2, avatar3];
 
+  const testimonialsCarouselImage = PlaceHolderImages.find((img) => img.id === 'testimonials-carousel');
+
   return (
     <section className="py-20 sm:py-28 bg-black text-white">
       <div className="container mx-auto px-4 flex flex-col items-center">
@@ -83,6 +85,39 @@ export default function TestimonialsSection() {
           <CarouselPrevious className="text-white bg-black/50 border-primary/50 hover:bg-primary" />
           <CarouselNext className="text-white bg-black/50 border-primary/50 hover:bg-primary" />
         </Carousel>
+
+        {testimonialsCarouselImage && (
+            <div className="w-full mt-12">
+                 <Carousel
+                    opts={{
+                        align: "start",
+                        loop: true,
+                    }}
+                    plugins={[
+                        Autoplay({
+                            delay: 4000,
+                            stopOnInteraction: true,
+                        }),
+                    ]}
+                    className="w-full max-w-4xl mx-auto"
+                >
+                    <CarouselContent>
+                        <CarouselItem>
+                            <Image
+                                src={testimonialsCarouselImage.imageUrl}
+                                alt={testimonialsCarouselImage.description}
+                                width={1200}
+                                height={800}
+                                className="w-full h-auto object-contain rounded-lg"
+                                data-ai-hint={testimonialsCarouselImage.imageHint}
+                            />
+                        </CarouselItem>
+                    </CarouselContent>
+                    <CarouselPrevious className="text-white bg-black/50 border-primary/50 hover:bg-primary left-2" />
+                    <CarouselNext className="text-white bg-black/50 border-primary/50 hover:bg-primary right-2" />
+                </Carousel>
+            </div>
+        )}
       </div>
     </section>
   );
