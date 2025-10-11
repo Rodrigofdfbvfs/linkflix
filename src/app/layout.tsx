@@ -1,11 +1,26 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import { Toaster } from "@/components/ui/toaster";
+import { Bebas_Neue, Montserrat } from 'next/font/google';
 
 export const metadata: Metadata = {
   title: "BioFlix – Link da Bio Estilo Netflix",
   description: "Templates editáveis no Canva para transformar seu perfil em uma vitrine profissional.",
 };
+
+const bebas_neue = Bebas_Neue({
+  subsets: ['latin'],
+  display: 'swap',
+  weight: '400',
+  variable: '--font-bebas-neue',
+});
+
+const montserrat = Montserrat({
+  subsets: ['latin'],
+  display: 'swap',
+  weight: ['300', '400', '700'],
+  variable: '--font-montserrat',
+});
 
 export default function RootLayout({
   children,
@@ -13,12 +28,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="pt-BR">
+    <html lang="pt-BR" className={`${bebas_neue.variable} ${montserrat.variable}`}>
       <head>
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
-        <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet" />
-        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap" rel="stylesheet" />
       </head>
       <body className="font-body antialiased">
         {children}
