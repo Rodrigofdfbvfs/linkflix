@@ -95,7 +95,7 @@ export default function BonusSection() {
                 size="lg"
                 className="font-bold text-lg px-8 py-6 bg-primary text-primary-foreground rounded-md transition-all duration-300 hover:bg-primary/90 hover:shadow-red-glow"
             >
-                <Link href="#pricing">Garantir meu acesso com todos os bônus</Link>
+                <Link href="#pricing">Garantir meu acesso ao bonus</Link>
             </Button>
         </div>
       </div>
