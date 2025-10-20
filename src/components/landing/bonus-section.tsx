@@ -2,6 +2,8 @@ import Image from "next/image";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Gift, CreditCard, Image as ImageIcon, Globe, Briefcase, Smile } from "lucide-react";
 import { PlaceHolderImages } from "@/lib/placeholder-images";
+import { Button } from "@/components/ui/button";
+import Link from "next/link";
 
 const bonuses = [
   {
@@ -86,6 +88,15 @@ export default function BonusSection() {
               </div>
             )
           })}
+        </div>
+        <div className="mt-16 text-center">
+            <Button
+                asChild
+                size="lg"
+                className="font-bold text-lg px-8 py-6 bg-primary text-primary-foreground rounded-md transition-all duration-300 hover:bg-primary/90 hover:shadow-red-glow"
+            >
+                <Link href="#pricing">Garantir meu acesso com todos os bônus</Link>
+            </Button>
         </div>
       </div>
     </section>

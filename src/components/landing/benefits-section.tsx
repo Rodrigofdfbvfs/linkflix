@@ -1,5 +1,7 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Sparkles, Palette, Users, Zap, TrendingUp, ShoppingBag } from "lucide-react";
+import { Button } from "@/components/ui/button";
+import Link from "next/link";
 
 const benefits = [
   {
@@ -58,6 +60,15 @@ export default function BenefitsSection() {
               </Card>
             </div>
           ))}
+        </div>
+        <div className="mt-16 text-center">
+            <Button
+                asChild
+                size="lg"
+                className="font-bold text-lg px-8 py-6 bg-primary text-primary-foreground rounded-md transition-all duration-300 hover:bg-primary/90 hover:shadow-red-glow"
+            >
+                <Link href="#pricing">Quero o meu agora</Link>
+            </Button>
         </div>
       </div>
     </section>
