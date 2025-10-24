@@ -47,7 +47,7 @@ export default function PricingSection() {
     <section id="pricing" className="py-20 sm:py-28 bg-black text-white">
       <div className="container mx-auto px-4">
         <div className="text-center mb-12">
-          <h2 className="font-headline text-4xl md:text-5xl text-primary tracking-wider">
+          <h2 className="font-headline text-4xl md:text-5xl text-primary">
             Escolha seu plano e comece agora
           </h2>
         </div>
@@ -56,7 +56,7 @@ export default function PricingSection() {
           <div className="w-full max-w-md animate-in fade-in slide-in-from-bottom-10 duration-700">
             <Card className="bg-gray-900/50 border-gray-800 h-full flex flex-col">
               <CardHeader className="text-center">
-                <CardTitle className="text-3xl font-headline tracking-wider">Plano Básico</CardTitle>
+                <CardTitle className="text-3xl font-headline">Plano Básico</CardTitle>
                 <CardDescription className="text-white/70">Essencial para começar</CardDescription>
                 <p className="text-4xl font-bold pt-4">R$ 14,90</p>
               </CardHeader>
@@ -97,7 +97,7 @@ export default function PricingSection() {
                 </div>
               )}
               <CardHeader className="text-center">
-                <CardTitle className="text-3xl font-headline tracking-wider text-primary">Plano Premium</CardTitle>
+                <CardTitle className="text-3xl font-headline text-primary">Plano Premium</CardTitle>
                 <CardDescription className="text-white/70">Acesso completo e todos os bônus</CardDescription>
                 <p className="text-4xl font-bold text-white pt-4">R$ 27,00</p>
               </CardHeader>

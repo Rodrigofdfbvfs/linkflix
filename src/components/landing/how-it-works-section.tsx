@@ -27,7 +27,7 @@ export default function HowItWorksSection() {
       <div className="container mx-auto px-4">
         <div className="grid md:grid-cols-2 gap-12 items-center">
           <div className="text-center md:text-left animate-in fade-in slide-in-from-left-12 duration-1000">
-            <h2 className="font-headline text-4xl md:text-5xl text-primary tracking-wider">
+            <h2 className="font-headline text-4xl md:text-5xl text-primary">
               Crie e publique em minutos
             </h2>
             <p className="mt-4 text-lg md:text-xl text-white/90 max-w-lg mx-auto md:mx-0">

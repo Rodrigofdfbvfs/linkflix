@@ -37,7 +37,7 @@ export default function SpecialOfferPage() {
             <main className="flex-1 flex items-center justify-center py-20 sm:py-28">
                 <div className="container mx-auto px-4">
                     <div className="text-center mb-12">
-                        <h1 className="font-headline text-4xl md:text-5xl text-primary tracking-wider">
+                        <h1 className="font-headline text-4xl md:text-5xl text-primary">
                             Espere! Uma Oferta Especial Para Você
                         </h1>
                         <p className="mt-4 text-lg text-white/80 max-w-2xl mx-auto">
@@ -61,7 +61,7 @@ export default function SpecialOfferPage() {
                                     </div>
                                 )}
                                 <CardHeader className="text-center">
-                                    <CardTitle className="text-3xl font-headline tracking-wider text-primary">Plano Premium</CardTitle>
+                                    <CardTitle className="text-3xl font-headline text-primary">Plano Premium</CardTitle>
                                     <CardDescription className="text-white/70">Acesso completo e todos os bônus</CardDescription>
                                     <div className="pt-4">
                                         <p className="text-xl line-through text-white/50">De R$ 27,00</p>

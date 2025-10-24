@@ -25,7 +25,7 @@ export default function TestimonialsSection() {
   return (
     <section className="py-20 sm:py-28 bg-black text-white">
       <div className="container mx-auto px-4 flex flex-col items-center">
-        <h2 className="font-headline text-4xl md:text-5xl text-primary tracking-wider text-center">
+        <h2 className="font-headline text-4xl md:text-5xl text-primary text-center">
           O que nossos clientes dizem
         </h2>
         <Separator className="my-6 bg-primary/20 w-1/4 h-[2px] shadow-red-glow" />

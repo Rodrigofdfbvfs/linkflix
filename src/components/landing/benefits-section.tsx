@@ -41,7 +41,7 @@ export default function BenefitsSection() {
     <section className="py-20 sm:py-28 bg-black text-white">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
-          <h2 className="font-headline text-4xl md:text-5xl tracking-wider">Por que escolher o <span className="text-primary">BioFlix?</span></h2>
+          <h2 className="font-headline text-4xl md:text-5xl">Por que escolher o <span className="text-primary">BioFlix?</span></h2>
           <p className="mt-4 text-lg text-white/70 max-w-3xl mx-auto">Tudo que você precisa para ter um link da bio que impressiona e converte.</p>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">

@@ -55,7 +55,7 @@ export default function BonusSection() {
     <section className="py-20 sm:py-28 bg-black text-white">
       <div className="container mx-auto px-4">
         <div className="text-center mb-12">
-          <h2 className="font-headline text-4xl md:text-5xl tracking-wider text-primary">Bônus exclusivos do plano Premium</h2>
+          <h2 className="font-headline text-4xl md:text-5xl text-primary">Bônus exclusivos do plano Premium</h2>
         </div>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
           {bonuses.map((bonus, index) => {
