@@ -36,11 +36,11 @@ export default function HeroSection() {
         <p className="mt-4 max-w-2xl text-lg md:text-xl text-white/90 animate-in fade-in slide-in-from-bottom-12 duration-1000 delay-300">
           Templates editáveis no Canva para transformar seu perfil em uma vitrine profissional.
         </p>
-        <div className="mt-8 animate-in fade-in slide-in-from-bottom-12 duration-1000 delay-400">
+        <div className="mt-8 animate-in fade-in slide-in-from-bottom-12 duration-1000 delay-400 w-full max-w-xs sm:max-w-sm">
           <Button
             asChild
             size="lg"
-            className="font-bold text-lg px-8 py-6 bg-primary text-primary-foreground rounded-md transition-all duration-300 hover:bg-primary/90 hover:shadow-red-glow animate-pulse-glow"
+            className="font-bold text-lg w-full py-6 bg-primary text-primary-foreground rounded-md transition-all duration-300 hover:bg-primary/90 hover:shadow-red-glow animate-pulse-glow"
           >
             <Link href="#pricing">Quero o meu agora</Link>
           </Button>
