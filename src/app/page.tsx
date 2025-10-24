@@ -9,6 +9,7 @@ import PricingSection from '@/components/landing/pricing-section';
 import FaqSection from '@/components/landing/faq-section';
 import Footer from '@/components/landing/footer';
 import DateBanner from '@/components/landing/date-banner';
+import VslSection from '@/components/landing/vsl-section';
 
 export default function Home() {
   return (
@@ -17,6 +18,7 @@ export default function Home() {
       <Header />
       <main className="flex-1">
         <HeroSection />
+        <VslSection />
         <HowItWorksSection />
         <BenefitsSection />
         <ServicesSection />
