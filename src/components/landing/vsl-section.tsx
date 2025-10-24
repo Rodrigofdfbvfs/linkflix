@@ -59,6 +59,10 @@ export default function VslSection() {
       </style>
 
       <section className="vsl-section">
+        <div className="text-center mb-8 z-10">
+            <h2 className="font-headline text-4xl md:text-5xl text-primary">Assista e veja como é fácil!</h2>
+            <p className="mt-2 text-lg text-white/80">Clique para ativar o som</p>
+        </div>
         {/* @ts-ignore */}
         <wistia-player media-id="oqpe31jmsc" aspect="0.5625"></wistia-player>
       </section>
