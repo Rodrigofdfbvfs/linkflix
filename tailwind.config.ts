@@ -90,11 +90,9 @@ export default {
         },
         'pulse-glow': {
           '0%, 100%': { 
-            transform: 'scale(1)',
             boxShadow: '0 0 15px hsl(var(--primary) / 0.6)',
           },
           '50%': { 
-            transform: 'scale(1.05)',
             boxShadow: '0 0 25px hsl(var(--primary) / 0.8)',
            },
         }
