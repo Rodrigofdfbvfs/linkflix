@@ -1,5 +1,6 @@
 import Header from '@/components/landing/header';
 import HeroSection from '@/components/landing/hero-section';
+import VslSection from '@/components/landing/vsl-section';
 import BenefitsSection from '@/components/landing/benefits-section';
 import HowItWorksSection from '@/components/landing/how-it-works-section';
 import ServicesSection from '@/components/landing/services-section';
@@ -17,6 +18,7 @@ export default function Home() {
       <Header />
       <main className="flex-1">
         <HeroSection />
+        <VslSection />
         <HowItWorksSection />
         <BenefitsSection />
         <ServicesSection />
