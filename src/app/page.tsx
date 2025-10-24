@@ -2,6 +2,7 @@ import Header from '@/components/landing/header';
 import HeroSection from '@/components/landing/hero-section';
 import BenefitsSection from '@/components/landing/benefits-section';
 import HowItWorksSection from '@/components/landing/how-it-works-section';
+import ServicesSection from '@/components/landing/services-section';
 import BonusSection from '@/components/landing/bonus-section';
 import TestimonialsSection from '@/components/landing/testimonials-section';
 import PricingSection from '@/components/landing/pricing-section';
@@ -18,6 +19,7 @@ export default function Home() {
         <HeroSection />
         <HowItWorksSection />
         <BenefitsSection />
+        <ServicesSection />
         <BonusSection />
         <TestimonialsSection />
         <PricingSection />
