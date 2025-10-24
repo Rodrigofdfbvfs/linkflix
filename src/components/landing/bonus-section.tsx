@@ -1,6 +1,6 @@
 import Image from "next/image";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { Gift, CreditCard, Image as ImageIcon, Globe, Briefcase, Smile } from "lucide-react";
+import { Gift, CreditCard, Image as ImageIcon, Globe, Smile } from "lucide-react";
 import { PlaceHolderImages } from "@/lib/placeholder-images";
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
@@ -33,13 +33,6 @@ const bonuses = [
     title: "Templates de Sites",
     description: "Modelos de sites de uma página para divulgar seus projetos com profissionalismo.",
     imageId: "bonus-sites",
-  },
-  {
-    icon: <Briefcase size={32} className="text-white/80" />,
-    id: "05",
-    title: "Templates para Prestadores de Serviço",
-    description: "Designs específicos para coaches, mentores, social media e outras profissões.",
-    imageId: "bonus-services",
   },
   {
     icon: <Smile size={32} className="text-white/80" />,
