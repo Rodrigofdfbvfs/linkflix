@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import { Toaster } from "@/components/ui/toaster";
-import { Bebas_Neue, Montserrat } from 'next/font/google';
+import { Poppins, Montserrat } from 'next/font/google';
 import Script from "next/script";
 
 export const metadata: Metadata = {
@@ -9,11 +9,11 @@ export const metadata: Metadata = {
   description: "Templates editáveis no Canva para transformar seu perfil em uma vitrine profissional.",
 };
 
-const bebas_neue = Bebas_Neue({
+const poppins = Poppins({
   subsets: ['latin'],
   display: 'swap',
-  weight: '400',
-  variable: '--font-bebas-neue',
+  weight: '700',
+  variable: '--font-poppins',
 });
 
 const montserrat = Montserrat({
@@ -29,7 +29,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="pt-BR" className={`${bebas_neue.variable} ${montserrat.variable}`}>
+    <html lang="pt-BR" className={`${poppins.variable} ${montserrat.variable}`}>
       <head>
       </head>
       <body className="font-body antialiased">
