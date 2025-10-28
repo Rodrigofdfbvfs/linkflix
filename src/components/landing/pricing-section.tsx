@@ -71,7 +71,7 @@ export default function PricingSection() {
                 </ul>
               </CardContent>
               <CardFooter>
-                <Button asChild className="w-full font-bold transition-all duration-300 hover:shadow-red-glow">
+                <Button asChild className="w-full font-bold transition-all duration-300 hover:shadow-red-glow bg-primary">
                   <Link href={specialOfferUrl}>Começar com o plano básico</Link>
                 </Button>
               </CardFooter>
@@ -112,7 +112,7 @@ export default function PricingSection() {
                 </ul>
               </CardContent>
               <CardFooter>
-                <Button size="lg" className="w-full font-bold transition-all duration-300 hover:shadow-red-glow" onClick={() => handleRedirect('https://pay.cakto.com.br/39w9cm2_599573')}>
+                <Button size="lg" className="w-full font-bold transition-all duration-300 hover:shadow-red-glow" onClick={() => handleRedirect('https://pay.lowify.com.br/checkout?product_id=chIErJ')}>
                   Quero o Premium completo
                 </Button>
               </CardFooter>
