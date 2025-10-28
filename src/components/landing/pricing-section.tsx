@@ -71,7 +71,7 @@ export default function PricingSection() {
                 </ul>
               </CardContent>
               <CardFooter>
-                <Button asChild className="w-full bg-gray-700 hover:bg-gray-600">
+                <Button asChild className="w-full font-bold transition-all duration-300 hover:shadow-red-glow">
                   <Link href={specialOfferUrl}>Começar com o plano básico</Link>
                 </Button>
               </CardFooter>
