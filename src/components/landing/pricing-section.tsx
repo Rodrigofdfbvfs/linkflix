@@ -33,8 +33,14 @@ export default function PricingSection() {
   const premiumImage = PlaceHolderImages.find((img) => img.id === 'hero-image');
 
   const handleRedirect = (baseUrl: string) => {
-    const params = window.location.search;
-    window.location.href = `${baseUrl}${params}`;
+    const currentParams = new URLSearchParams(window.location.search);
+    const newUrl = new URL(baseUrl);
+
+    currentParams.forEach((value, key) => {
+      newUrl.searchParams.set(key, value);
+    });
+
+    window.location.href = newUrl.toString();
   };
 
   const [specialOfferUrl, setSpecialOfferUrl] = useState('/oferta-especial');
