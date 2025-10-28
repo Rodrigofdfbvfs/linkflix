@@ -57,6 +57,13 @@ export default function RootLayout({
             document.head.appendChild(a);
           `}
         </Script>
+        <Script
+          src="https://cdn.utmify.com.br/scripts/utms/latest.js"
+          data-utmify-prevent-xcod-sck
+          data-utmify-prevent-subids
+          async
+          defer
+        ></Script>
         <noscript>
           <img height="1" width="1" style={{display: 'none'}}
             src="https://www.facebook.com/tr?id=1473744157185428&ev=PageView&noscript=1"
