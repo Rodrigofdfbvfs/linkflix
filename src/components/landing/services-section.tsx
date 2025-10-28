@@ -4,7 +4,7 @@ import Link from 'next/link';
 
 export default function ServicesSection() {
   return (
-    <section className="py-20 sm:py-28 bg-black text-white">
+    <section className="py-16 sm:py-20 bg-black text-white">
       <div className="container mx-auto px-4">
         <div className="grid md:grid-cols-2 gap-12 items-center">
           <div className="flex justify-center animate-in fade-in slide-in-from-left-12 duration-1000">

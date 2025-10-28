@@ -9,7 +9,7 @@ export default function HeroSection() {
   const heroImage = PlaceHolderImages.find((img) => img.id === 'hero-image');
 
   return (
-    <section className="relative w-full flex items-center justify-center text-center overflow-hidden bg-black py-10 sm:py-20">
+    <section className="relative w-full flex items-center justify-center text-center overflow-hidden bg-black pt-10 pb-16 sm:pt-20 sm:pb-24">
       <div
         className="absolute inset-0 bg-black opacity-50"
         style={{

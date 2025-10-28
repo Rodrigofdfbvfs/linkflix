@@ -45,7 +45,7 @@ const bonuses = [
 
 export default function BonusSection() {
   return (
-    <section className="py-20 sm:py-28 bg-black text-white">
+    <section className="py-16 sm:py-20 bg-black text-white">
       <div className="container mx-auto px-4">
         <div className="text-center mb-12">
           <h2 className="font-headline text-4xl md:text-5xl text-primary">Bônus exclusivos do plano Premium</h2>

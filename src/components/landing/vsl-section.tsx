@@ -18,7 +18,7 @@ export default function VslSection() {
           .vsl-section {
             position: relative;
             width: 100%;
-            padding: 100px 20px;
+            padding: 80px 20px;
             background-color: #000000;
             display: flex;
             justify-content: center;
@@ -42,14 +42,14 @@ export default function VslSection() {
             position: relative;
             z-index: 2;
             width: 100%;
-            max-width: 450px; /* Adjusted for better vertical video fit */
+            max-width: 450px;
             border-radius: 16px;
             overflow: hidden;
             box-shadow: 0 0 40px rgba(229, 9, 20, 0.2);
           }
           @media (max-width: 768px) {
             .vsl-section {
-              padding: 60px 15px;
+              padding: 40px 15px;
             }
             wistia-player {
               max-width: 100%;
