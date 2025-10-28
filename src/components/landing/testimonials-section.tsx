@@ -23,7 +23,7 @@ export default function TestimonialsSection() {
   const testimonialImages = testimonialImageIds.map(id => PlaceHolderImages.find((img) => img.id === id)).filter(Boolean);
 
   return (
-    <section className="py-16 sm:py-20 bg-black text-white">
+    <section className="pt-16 sm:pt-20 pb-8 sm:pb-10 bg-black text-white">
       <div className="container mx-auto px-4 flex flex-col items-center">
         <h2 className="font-headline text-4xl md:text-5xl text-primary text-center">
           O que nossos clientes dizem
