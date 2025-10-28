@@ -47,6 +47,16 @@ export default function RootLayout({
             fbq('track', 'PageView');
           `}
         </Script>
+        <Script id="utmify-pixel" strategy="afterInteractive">
+          {`
+            window.pixelId = "69002f491d3aebc5670e1841";
+            var a = document.createElement("script");
+            a.setAttribute("async", "");
+            a.setAttribute("defer", "");
+            a.setAttribute("src", "https://cdn.utmify.com.br/scripts/pixel/pixel.js");
+            document.head.appendChild(a);
+          `}
+        </Script>
         <noscript>
           <img height="1" width="1" style={{display: 'none'}}
             src="https://www.facebook.com/tr?id=1473744157185428&ev=PageView&noscript=1"
