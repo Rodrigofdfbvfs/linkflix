@@ -18,7 +18,7 @@ export default function HeroSection() {
       ></div>
       <div className="container relative z-10 flex flex-col items-center px-4">
         <h1 className="font-headline text-4xl md:text-6xl lg:text-7xl uppercase text-primary animate-in fade-in slide-in-from-bottom-12 duration-1000 delay-200">
-          Monte seu Link da Bio Estilo Netflix
+          Templates de Mini Site na Bio Estilo Netflix
         </h1>
         <p className="mt-4 max-w-2xl text-lg md:text-xl text-white/90 animate-in fade-in slide-in-from-bottom-12 duration-1000 delay-300">
           Templates editáveis no Canva para transformar seu perfil em uma vitrine profissional.
