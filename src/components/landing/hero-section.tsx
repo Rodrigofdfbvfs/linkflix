@@ -19,13 +19,13 @@ export default function HeroSection() {
       ></div>
       <div className="container relative z-10 flex flex-col items-center px-4">
         <h1 className="font-headline text-4xl md:text-6xl lg:text-7xl uppercase text-primary animate-in fade-in slide-in-from-bottom-12 duration-1000 delay-200">
-          Templates de Mini Site na Bio Estilo Netflix
+          +20 Templates de Mini Site na Bio Estilo Netflix
         </h1>
         <p className="mt-4 max-w-2xl text-lg md:text-xl text-white/90 animate-in fade-in slide-in-from-bottom-12 duration-1000 delay-300">
           Templates editáveis no Canva para transformar seu perfil em uma vitrine profissional.
         </p>
         {heroImage && (
-          <div className="my-4 animate-in fade-in zoom-in-50 duration-1000">
+          <div className="my-2 animate-in fade-in zoom-in-50 duration-1000">
             <Image
               src={heroImage.imageUrl}
               alt={heroImage.description}
@@ -45,7 +45,7 @@ export default function HeroSection() {
           >
             <Link href="#pricing">
               <ShoppingBag className="mr-2 h-5 w-5" />
-              Quero o meu agora
+              QUERO COMPRAR
             </Link>
           </Button>
           <p className="mt-4 text-white/80">
