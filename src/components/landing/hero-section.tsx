@@ -40,7 +40,7 @@ export default function HeroSection() {
           <Button
             asChild
             size="lg"
-            className="font-bold text-lg w-full py-7 bg-primary text-primary-foreground rounded-xl transition-all duration-300 hover:bg-primary/90 hover:shadow-red-glow animate-pulse-glow"
+            className="font-bold text-lg w-full py-7 bg-primary text-primary-foreground rounded-full transition-all duration-300 hover:bg-primary/90 hover:shadow-red-glow animate-pulse-glow"
           >
             <Link href="#pricing">Quero o meu agora</Link>
           </Button>
