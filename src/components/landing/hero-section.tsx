@@ -9,7 +9,7 @@ export default function HeroSection() {
   const heroImage = PlaceHolderImages.find((img) => img.id === 'hero-image');
 
   return (
-    <section className="relative w-full flex items-center justify-center text-center overflow-hidden bg-black pt-4 pb-16 sm:pt-6 sm:pb-24">
+    <section className="relative w-full flex items-center justify-center text-center overflow-hidden bg-black pt-2 pb-8 sm:pt-4 sm:pb-12">
       <div
         className="absolute inset-0 bg-black opacity-50"
         style={{
@@ -46,7 +46,7 @@ export default function HeroSection() {
           </Button>
           <p className="mt-4 text-white/80">
             Por apenas <br />
-            <span className="font-bold text-[40px] text-white">R$ 14,90</span>
+            <span className="font-bold text-[40px] text-white">R$ 10,00</span>
           </p>
         </div>
       </div>
