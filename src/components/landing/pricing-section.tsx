@@ -36,12 +36,9 @@ export default function PricingSection() {
     const currentParams = new URLSearchParams(window.location.search);
     const newUrl = new URL(baseUrl);
     
-    // Combine search params
     const baseParams = new URL(baseUrl).searchParams;
     baseParams.forEach((value, key) => {
-      if (!newUrl.searchParams.has(key)) {
-        newUrl.searchParams.set(key, value);
-      }
+      newUrl.searchParams.set(key, value);
     });
 
     currentParams.forEach((value, key) => {
@@ -72,7 +69,7 @@ export default function PricingSection() {
               <CardHeader className="text-center">
                 <CardTitle className="text-3xl font-headline">Plano Básico</CardTitle>
                 <CardDescription className="text-white/70">Essencial para começar</CardDescription>
-                <p className="text-4xl font-bold pt-4">R$ 10,00</p>
+                <p className="text-5xl font-bold pt-4">R$10</p>
               </CardHeader>
               <CardContent className="flex-grow">
                 <ul className="space-y-3">
