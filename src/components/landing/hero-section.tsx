@@ -25,7 +25,7 @@ export default function HeroSection() {
           Templates editáveis no Canva para transformar seu perfil em uma vitrine profissional.
         </p>
         {heroImage && (
-          <div className="my-8 animate-in fade-in zoom-in-50 duration-1000">
+          <div className="my-4 animate-in fade-in zoom-in-50 duration-1000">
             <Image
               src={heroImage.imageUrl}
               alt={heroImage.description}
