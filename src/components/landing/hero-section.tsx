@@ -37,11 +37,11 @@ export default function HeroSection() {
             />
           </div>
         )}
-        <div className="mt-8 animate-in fade-in slide-in-from-bottom-12 duration-1000 delay-400 w-full max-w-xs sm:max-w-sm">
+        <div className="mt-8 animate-in fade-in slide-in-from-bottom-12 duration-1000 delay-400 w-full max-w-sm sm:max-w-md">
           <Button
             asChild
             size="lg"
-            className="font-bold text-lg w-full py-7 bg-primary text-primary-foreground rounded-full transition-all duration-300 hover:bg-primary/90 hover:shadow-red-glow animate-pulse-glow"
+            className="font-bold uppercase text-lg w-full py-7 bg-primary text-primary-foreground rounded-full transition-all duration-300 hover:bg-primary/90 hover:shadow-red-glow animate-pulse-glow"
           >
             <Link href="#pricing">
               <ShoppingBag className="mr-2 h-5 w-5" />
