@@ -4,6 +4,7 @@ import Image from 'next/image';
 import { Button } from '@/components/ui/button';
 import { PlaceHolderImages } from '@/lib/placeholder-images';
 import Link from 'next/link';
+import { ShoppingBag } from 'lucide-react';
 
 export default function HeroSection() {
   const heroImage = PlaceHolderImages.find((img) => img.id === 'hero-image');
@@ -42,7 +43,10 @@ export default function HeroSection() {
             size="lg"
             className="font-bold text-lg w-full py-7 bg-primary text-primary-foreground rounded-full transition-all duration-300 hover:bg-primary/90 hover:shadow-red-glow animate-pulse-glow"
           >
-            <Link href="#pricing">Quero o meu agora</Link>
+            <Link href="#pricing">
+              <ShoppingBag className="mr-2 h-5 w-5" />
+              Quero o meu agora
+            </Link>
           </Button>
           <p className="mt-4 text-white/80">
             Por apenas <br />
