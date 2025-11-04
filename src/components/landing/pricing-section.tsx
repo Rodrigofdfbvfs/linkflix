@@ -110,7 +110,7 @@ export default function PricingSection() {
               <CardHeader className="text-center">
                 <CardTitle className="text-3xl font-headline text-primary">Plano Premium</CardTitle>
                 <CardDescription className="text-white/70">Acesso completo e todos os bônus</CardDescription>
-                <p className="text-4xl font-bold text-white pt-4">R$ 27,00</p>
+                <p className="text-5xl font-bold text-white pt-4">R$27</p>
               </CardHeader>
               <CardContent className="flex-grow">
                 <ul className="space-y-3">
