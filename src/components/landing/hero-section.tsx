@@ -22,7 +22,7 @@ export default function HeroSection() {
           +20 Templates de Mini Site na Bio Estilo Netflix
         </h1>
         <p className="mt-4 max-w-2xl text-lg md:text-xl text-white/90 animate-in fade-in slide-in-from-bottom-12 duration-1000 delay-300">
-          Templates editáveis no Canva para vender até 50% mais pelo instagram.
+          Templates editáveis no Canva para <strong className="text-white">vender até 50% a mais</strong> pelo instagram.
         </p>
         {heroImage && (
           <div className="my-2 animate-in fade-in zoom-in-50 duration-1000">
