@@ -112,7 +112,7 @@ export default function PricingSection() {
                 <CardDescription className="text-white/70">Acesso completo e todos os bônus</CardDescription>
                 <div className="pt-4">
                   <p className="text-xl line-through text-white/50">De R$97,00</p>
-                  <p className="text-5xl font-bold text-white">Por R$27</p>
+                  <p className="text-5xl font-bold text-white">R$27</p>
                 </div>
               </CardHeader>
               <CardContent className="flex-grow">
