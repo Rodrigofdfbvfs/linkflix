@@ -67,9 +67,9 @@ export default function SpecialOfferPage() {
                                     <CardTitle className="text-3xl font-headline text-primary">Plano Premium</CardTitle>
                                     <CardDescription className="text-white/70">Acesso completo e todos os bônus</CardDescription>
                                     <div className="pt-4">
-                                        <p className="text-xl line-through text-white/50">De R$ 97,00</p>
+                                        <p className="text-xl line-through text-white/50">De R$ 20,00</p>
                                         <p className="text-4xl font-bold text-white">
-                                            Por apenas <br /> R$ 15,90
+                                            Por R$ 15,90
                                         </p>
                                     </div>
                                 </CardHeader>
