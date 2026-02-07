@@ -62,9 +62,9 @@ export default function PricingSection() {
             Escolha seu plano e comece agora
           </h2>
         </div>
-        <div className="flex flex-wrap justify-center gap-8">
+        <div className="flex flex-col md:flex-row justify-center items-center md:items-stretch gap-8">
           {/* Plano Básico */}
-          <div className="w-full max-w-md animate-in fade-in slide-in-from-bottom-10 duration-700">
+          <div className="w-full max-w-md animate-in fade-in slide-in-from-bottom-10 duration-700 order-2 md:order-1">
             <Card className="bg-gray-900/50 border-gray-800 h-full flex flex-col">
               <CardHeader className="text-center">
                 <CardTitle className="text-3xl font-headline">Plano Básico</CardTitle>
@@ -90,7 +90,7 @@ export default function PricingSection() {
           </div>
 
           {/* Plano Premium */}
-          <div className="w-full max-w-md animate-in fade-in slide-in-from-bottom-10 duration-700 delay-200 relative">
+          <div className="w-full max-w-md animate-in fade-in slide-in-from-bottom-10 duration-700 delay-200 relative order-1 md:order-2">
             <div className="absolute top-0 left-1/2 -translate-x-1/2 -mt-3 z-10 bg-primary text-primary-foreground text-xs font-bold uppercase tracking-wider px-3 py-1.5 rounded-full shadow-lg">
               Mais Popular
             </div>
