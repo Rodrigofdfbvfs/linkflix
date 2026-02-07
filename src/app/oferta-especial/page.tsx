@@ -46,9 +46,6 @@ export default function SpecialOfferPage() {
                         <h1 className="font-headline text-4xl md:text-5xl text-primary">
                             Espere! Uma Oferta Especial Para Você
                         </h1>
-                        <p className="mt-4 text-lg text-white/80 max-w-2xl mx-auto">
-                            Você está a um passo de transformar seu perfil. Aproveite esta oportunidade única para obter o Plano Premium com um desconto exclusivo.
-                        </p>
                     </div>
 
                     <div className="flex justify-center">
