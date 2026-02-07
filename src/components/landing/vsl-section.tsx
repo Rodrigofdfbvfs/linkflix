@@ -3,18 +3,40 @@
 import Script from "next/script";
 
 export default function VslSection() {
+  // The user provided a raw HTML/JS snippet for the video player.
+  // The best way to handle this in React/Next.js is to separate the script loading
+  // from the HTML structure.
+  // We use dangerouslySetInnerHTML to render the player's div and iframe structure,
+  // and a Next.js Script component to load the player's SDK.
+
+  const videoPlayerHtml = `
+    <div id="ifr_69879e7c27efa9d18cdb2af0_wrapper" style="margin: 0 auto; width: 100%; max-width: 400px;">
+      <div style="position: relative; padding: 177.77777777777777% 0 0 0;" id="ifr_69879e7c27efa9d18cdb2af0_aspect">
+        <iframe
+          frameborder="0"
+          allowfullscreen
+          src="about:blank"
+          id="ifr_69879e7c27efa9d18cdb2af0"
+          style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"
+          referrerpolicy="origin"
+          onload="this.onload=null; this.src='https://scripts.converteai.net/2be27a27-ac54-4e78-b535-fa4ffe697a01/players/69879e7c27efa9d18cdb2af0/v4/embed.html' + (location.search || '?') + '&vl=' + encodeURIComponent(location.href)"
+        ></iframe>
+      </div>
+    </div>
+  `;
+
   return (
     <>
-      <Script src="https://fast.wistia.com/player.js" async />
-      <Script src="https://fast.wistia.com/embed/oqpe31jmsc.js" async type="module" />
+      {/* This script is from the user's embed code. It loads the Converte.ai player SDK. */}
+      <Script
+        id="converteai-sdk-loader"
+        strategy="afterInteractive"
+        dangerouslySetInnerHTML={{
+          __html: `var s=document.createElement("script"); s.src="https://scripts.converteai.net/lib/js/smartplayer-wc/v4/sdk.js", s.async=!0,document.head.appendChild(s);`,
+        }}
+      />
       <style>
         {`
-          wistia-player[media-id='oqpe31jmsc']:not(:defined) {
-            background: center / contain no-repeat url('https://fast.wistia.com/embed/medias/oqpe31jmsc/swatch');
-            display: block;
-            filter: blur(5px);
-            padding-top: 177.78%;
-          }
           .vsl-section {
             position: relative;
             width: 100%;
@@ -38,30 +60,25 @@ export default function VslSection() {
             filter: blur(100px);
             z-index: 0;
           }
-          wistia-player {
-            position: relative;
-            z-index: 2;
-            width: 100%;
-            max-width: 450px;
-            border-radius: 16px;
-            overflow: hidden;
-            box-shadow: 0 0 40px rgba(229, 9, 20, 0.2);
+          #ifr_69879e7c27efa9d18cdb2af0_wrapper {
+             position: relative;
+             z-index: 2;
+             border-radius: 16px;
+             overflow: hidden;
+             box-shadow: 0 0 40px rgba(229, 9, 20, 0.2);
           }
           @media (max-width: 768px) {
             .vsl-section {
               padding: 40px 15px;
             }
-            wistia-player {
-              max-width: 100%;
-            }
           }
         `}
       </style>
 
-      <section className="vsl-section">
-        {/* @ts-ignore */}
-        <wistia-player media-id="oqpe31jmsc" aspect="0.5625"></wistia-player>
-      </section>
+      <section
+        className="vsl-section"
+        dangerouslySetInnerHTML={{ __html: videoPlayerHtml }}
+      />
     </>
   );
 }
