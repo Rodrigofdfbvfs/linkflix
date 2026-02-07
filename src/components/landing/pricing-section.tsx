@@ -25,7 +25,6 @@ const premiumFeatures = [
     "Posts prontos no Canva",
     "Templates de Sites",
     "Templates para Prestadores de Serviço",
-    "Pack de Figurinhas para Stories",
     "Atualizações semanais",
 ];
 
