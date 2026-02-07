@@ -72,7 +72,7 @@ export default function SpecialOfferPage() {
                                     <div className="pt-4">
                                         <p className="text-xl line-through text-white/50">De R$ 97,00</p>
                                         <p className="text-4xl font-bold text-white">
-                                            Por apenas <br /> R$ 20,00
+                                            Por apenas <br /> R$ 15,90
                                         </p>
                                     </div>
                                 </CardHeader>
