@@ -111,8 +111,8 @@ export default function PricingSection() {
                 <CardTitle className="text-3xl font-headline text-primary">Plano Premium</CardTitle>
                 <CardDescription className="text-white/70">Acesso completo e todos os bônus</CardDescription>
                 <div className="pt-4">
-                  <p className="text-xl line-through text-primary">R$97,00</p>
-                  <p className="text-5xl font-bold text-white">R$27</p>
+                  <p className="text-lg line-through text-primary">R$97,00</p>
+                  <p className="text-5xl font-bold text-white">R$20</p>
                 </div>
               </CardHeader>
               <CardContent className="flex-grow">
@@ -126,7 +126,7 @@ export default function PricingSection() {
                 </ul>
               </CardContent>
               <CardFooter>
-                <Button size="lg" className="w-full font-bold transition-all duration-300 hover:shadow-red-glow" onClick={() => handleRedirect('https://pay.lowify.com.br/checkout?product_id=chIErJ')}>
+                <Button size="lg" className="w-full font-bold transition-all duration-300 hover:shadow-red-glow" onClick={() => handleRedirect('https://pay.lowify.com.br/checkout?product_id=5BFiL9')}>
                   Quero o Premium completo
                 </Button>
               </CardFooter>
