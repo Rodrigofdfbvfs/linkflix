@@ -3,21 +3,16 @@
 import Script from "next/script";
 
 export default function VslSection() {
-  // The user provided a raw HTML/JS snippet for the video player.
-  // The best way to handle this in React/Next.js is to use dangerouslySetInnerHTML
-  // for the custom player element and a Next.js Script component to load the player's SDK.
-
   const videoPlayerHtml = `
     <vturb-smartplayer id="vid-69879e7c27efa9d18cdb2af0" style="display: block; margin: 0 auto; width: 100%; max-width: 400px;"></vturb-smartplayer>
   `;
 
   return (
     <>
-      {/* This script is from the user's embed code. It loads the Converte.ai player SDK. */}
       <Script
         id="converteai-sdk-loader"
         strategy="afterInteractive"
-        src="https://scripts.converteai.net/2be27-ac54-4e78-b535-fa4ffe697a01/players/69879e7c27efa9d18cdb2af0/v4/player.js"
+        src="https://scripts.converteai.net/2be27a27-ac54-4e78-b535-fa4ffe697a01/players/69879e7c27efa9d18cdb2af0/v4/player.js"
       />
       <style>
         {`
