@@ -19,7 +19,7 @@ export default function VslSection() {
           id="ifr_69879e7c27efa9d18cdb2af0"
           style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"
           referrerpolicy="origin"
-          onload="this.onload=null; this.src='https://scripts.converteai.net/2be27a27-ac54-4e78-b535-fa4ffe697a01/players/69879e7c27efa9d18cdb2af0/v4/embed.html' + (location.search || '?') + '&vl=' + encodeURIComponent(location.href)"
+          onload=" this.onload=null, this.src='https://scripts.converteai.net/2be27a27-ac54-4e78-b535-fa4ffe697a01/players/69879e7c27efa9d18cdb2af0/v4/embed.html' + (location.search || '?') + '&vl=' + encodeURIComponent(location.href)"
         ></iframe>
       </div>
     </div>
