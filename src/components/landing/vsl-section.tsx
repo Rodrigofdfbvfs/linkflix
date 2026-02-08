@@ -1,19 +1,12 @@
 "use client";
 
-import Script from "next/script";
-
 export default function VslSection() {
   const videoPlayerHtml = `
-    <vturb-smartplayer id="vid-69879e7c27efa9d18cdb2af0" style="display: block; margin: 0 auto; width: 100%; max-width: 400px;"></vturb-smartplayer>
+    <script type="text/javascript"> var s=document.createElement("script"); s.src="https://scripts.converteai.net/lib/js/smartplayer-wc/v4/sdk.js", s.async=!0,document.head.appendChild(s); </script> <div id="ifr_69879e7c27efa9d18cdb2af0_wrapper" style="margin: 0 auto; width: 100%; max-width: 400px;"> <div style="position: relative; padding: 177.77777777777777% 0 0 0;" id="ifr_69879e7c27efa9d18cdb2af0_aspect"> <iframe frameborder="0" allowfullscreen src="about:blank" id="ifr_69879e7c27efa9d18cdb2af0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" referrerpolicy="origin" onload=" this.onload=null, this.src='https://scripts.converteai.net/2be27a27-ac54-4e78-b535-fa4ffe697a01/players/69879e7c27efa9d18cdb2af0/v4/embed.html' +(location.search||'?') +'&vl=' +encodeURIComponent(location.href)"></iframe> </div> </div>
   `;
 
   return (
     <>
-      <Script
-        id="converteai-sdk-loader"
-        strategy="afterInteractive"
-        src="https://scripts.converteai.net/2be27a27-ac54-4e78-b535-fa4ffe697a01/players/69879e7c27efa9d18cdb2af0/v4/player.js"
-      />
       <style>
         {`
           .vsl-section {
@@ -39,7 +32,7 @@ export default function VslSection() {
             filter: blur(100px);
             z-index: 0;
           }
-          vturb-smartplayer {
+          #ifr_69879e7c27efa9d18cdb2af0_wrapper {
              position: relative;
              z-index: 2;
              border-radius: 16px;
