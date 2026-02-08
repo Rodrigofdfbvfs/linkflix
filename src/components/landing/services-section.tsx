@@ -9,7 +9,7 @@ export default function ServicesSection() {
         <div className="grid md:grid-cols-2 gap-12 items-center">
           <div className="flex justify-center animate-in fade-in slide-in-from-left-12 duration-1000">
             <Image
-              src="https://i.imgur.com/miXcfPZ.png"
+              src="https://i.imgur.com/kjcAA17.png"
               alt="Templates para prestadores de serviço"
               width={500}
               height={500}
