@@ -4,25 +4,11 @@ import Script from "next/script";
 
 export default function VslSection() {
   // The user provided a raw HTML/JS snippet for the video player.
-  // The best way to handle this in React/Next.js is to separate the script loading
-  // from the HTML structure.
-  // We use dangerouslySetInnerHTML to render the player's div and iframe structure,
-  // and a Next.js Script component to load the player's SDK.
+  // The best way to handle this in React/Next.js is to use dangerouslySetInnerHTML
+  // for the custom player element and a Next.js Script component to load the player's SDK.
 
   const videoPlayerHtml = `
-    <div id="ifr_69879e7c27efa9d18cdb2af0_wrapper" style="margin: 0 auto; width: 100%; max-width: 400px;">
-      <div style="position: relative; padding: 177.77777777777777% 0 0 0;" id="ifr_69879e7c27efa9d18cdb2af0_aspect">
-        <iframe
-          frameborder="0"
-          allowfullscreen
-          src="about:blank"
-          id="ifr_69879e7c27efa9d18cdb2af0"
-          style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"
-          referrerpolicy="origin"
-          onload=" this.onload=null, this.src='https://scripts.converteai.net/2be27a27-ac54-4e78-b535-fa4ffe697a01/players/69879e7c27efa9d18cdb2af0/v4/embed.html' + (location.search || '?') + '&vl=' + encodeURIComponent(location.href)"
-        ></iframe>
-      </div>
-    </div>
+    <vturb-smartplayer id="vid-69879e7c27efa9d18cdb2af0" style="display: block; margin: 0 auto; width: 100%; max-width: 400px;"></vturb-smartplayer>
   `;
 
   return (
@@ -32,7 +18,7 @@ export default function VslSection() {
         id="converteai-sdk-loader"
         strategy="afterInteractive"
         dangerouslySetInnerHTML={{
-          __html: `var s=document.createElement("script"); s.src="https://scripts.converteai.net/lib/js/smartplayer-wc/v4/sdk.js", s.async=!0,document.head.appendChild(s);`,
+          __html: `var s=document.createElement("script"); s.src="https://scripts.converteai.net/2be27a27-ac54-4e78-b535-fa4ffe697a01/players/69879e7c27efa9d18cdb2af0/v4/player.js", s.async=!0,document.head.appendChild(s);`,
         }}
       />
       <style>
@@ -60,7 +46,7 @@ export default function VslSection() {
             filter: blur(100px);
             z-index: 0;
           }
-          #ifr_69879e7c27efa9d18cdb2af0_wrapper {
+          vturb-smartplayer {
              position: relative;
              z-index: 2;
              border-radius: 16px;
