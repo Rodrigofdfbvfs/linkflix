@@ -17,9 +17,7 @@ export default function VslSection() {
       <Script
         id="converteai-sdk-loader"
         strategy="afterInteractive"
-        dangerouslySetInnerHTML={{
-          __html: `var s=document.createElement("script"); s.src="https://scripts.converteai.net/2be27a27-ac54-4e78-b535-fa4ffe697a01/players/69879e7c27efa9d18cdb2af0/v4/player.js", s.async=!0,document.head.appendChild(s);`,
-        }}
+        src="https://scripts.converteai.net/2be27-ac54-4e78-b535-fa4ffe697a01/players/69879e7c27efa9d18cdb2af0/v4/player.js"
       />
       <style>
         {`
