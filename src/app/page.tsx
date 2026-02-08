@@ -10,6 +10,7 @@ import PricingSection from '@/components/landing/pricing-section';
 import FaqSection from '@/components/landing/faq-section';
 import Footer from '@/components/landing/footer';
 import DateBanner from '@/components/landing/date-banner';
+import CustomerShowcaseSection from '@/components/landing/customer-showcase-section';
 
 export default function Home() {
   return (
@@ -23,6 +24,7 @@ export default function Home() {
         <BenefitsSection />
         <ServicesSection />
         <BonusSection />
+        <CustomerShowcaseSection />
         <TestimonialsSection />
         <PricingSection />
         <FaqSection />
