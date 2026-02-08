@@ -13,7 +13,7 @@ export default function ServicesSection() {
               alt="Templates para prestadores de serviço"
               width={500}
               height={500}
-              className="rounded-lg shadow-red-glow"
+              className=""
               data-ai-hint="service provider templates"
             />
           </div>
