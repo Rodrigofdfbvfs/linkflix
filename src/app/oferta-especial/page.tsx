@@ -5,7 +5,6 @@ import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle }
 import { Check } from "lucide-react";
 import Header from "@/components/landing/header";
 import Footer from "@/components/landing/footer";
-import Link from "next/link";
 import Image from "next/image";
 import { PlaceHolderImages } from "@/lib/placeholder-images";
 
@@ -26,8 +25,8 @@ export default function SpecialOfferPage() {
     const premiumImage = PlaceHolderImages.find((img) => img.id === 'hero-image');
 
     const handleRedirect = (baseUrl: string) => {
+        const newUrl = new URL(baseUrl, window.location.origin);
         const currentParams = new URLSearchParams(window.location.search);
-        const newUrl = new URL(baseUrl);
 
         currentParams.forEach((value, key) => {
             newUrl.searchParams.set(key, value);

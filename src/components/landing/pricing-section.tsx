@@ -3,10 +3,8 @@
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
 import { Check } from "lucide-react";
-import Link from "next/link";
 import Image from "next/image";
 import { PlaceHolderImages } from "@/lib/placeholder-images";
-import { useEffect, useState } from "react";
 
 const basicFeatures = [
   "Acesso ao template principal estilo Netflix",
@@ -32,26 +30,15 @@ export default function PricingSection() {
   const premiumImage = PlaceHolderImages.find((img) => img.id === 'hero-image');
 
   const handleRedirect = (baseUrl: string) => {
+    const newUrl = new URL(baseUrl, window.location.origin);
     const currentParams = new URLSearchParams(window.location.search);
-    const newUrl = new URL(baseUrl);
-    
-    const baseParams = new URL(baseUrl).searchParams;
-    baseParams.forEach((value, key) => {
-      newUrl.searchParams.set(key, value);
-    });
 
     currentParams.forEach((value, key) => {
-        newUrl.searchParams.set(key, value);
+      newUrl.searchParams.set(key, value);
     });
 
     window.location.href = newUrl.toString();
   };
-
-  const [specialOfferUrl, setSpecialOfferUrl] = useState('/oferta-especial');
-
-  useEffect(() => {
-    setSpecialOfferUrl(`/oferta-especial${window.location.search}`);
-  }, []);
 
   return (
     <section id="pricing" className="pt-8 sm:pt-10 pb-16 sm:pb-20 bg-black text-white">
@@ -81,8 +68,8 @@ export default function PricingSection() {
                 </ul>
               </CardContent>
               <CardFooter>
-                <Button asChild className="w-full font-bold transition-all duration-300 hover:shadow-red-glow bg-primary">
-                  <Link href={specialOfferUrl}>Começar com o plano básico</Link>
+                <Button className="w-full font-bold transition-all duration-300 hover:shadow-red-glow bg-primary" onClick={() => handleRedirect('/oferta-especial')}>
+                  Começar com o plano básico
                 </Button>
               </CardFooter>
             </Card>
