@@ -82,7 +82,7 @@ export default function SpecialOfferPage() {
                                     </ul>
                                 </CardContent>
                                 <CardFooter className="flex-col gap-4">
-                                    <Button size="lg" className="w-full font-bold transition-all duration-300 hover:shadow-red-glow" onClick={() => handleRedirect('https://pay.lowify.com.br/checkout?product_id=5BFiL9')}>
+                                    <Button size="lg" className="w-full font-bold transition-all duration-300 hover:shadow-red-glow" onClick={() => handleRedirect('https://pay.lowify.com.br/checkout?product_id=chIErJ')}>
                                         Quero o Premium com Desconto!
                                     </Button>
                                     <Button variant="outline" className="w-full text-white/70 hover:text-white hover:bg-primary/10 border-primary" onClick={() => handleRedirect('https://pay.lowify.com.br/checkout?product_id=KNCUhu')}>
